@@ -1,10 +1,478 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio | Amanda</title>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4a48cb8251.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="./static/css/global.css" />
+    <link rel="stylesheet" href="./static/css/styles_home.css" />
+    <link rel="stylesheet" href="./static/css/styles_projects.css" />
 </head>
+
 <body>
-    <h2>Amanda Vieira de Oliveira</h2>
+    <div class="container">
+        <div id="progress">
+            <span id="progress-value"><i class="fa-solid fa-arrow-up"></i></span>
+        </div>
+
+        <header>
+            <nav>
+                <a href=""><img src="./static/logo.png" class="logo" alt="Amanda Vieira"></a>
+                <div class="mobile-menu">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+                <ul class="nav-list">
+                    <li><a href="">Início</a></li>
+                    <li><a href="projacadem.html">Projetos acadêmicos</a></li>
+                    <li><a href="projpessoal.html">Projetos pessoais</a></li>
+                </ul>
+            </nav>
+            <script src="./static/mobile-navbar.js"></script>
+        </header>
+
+        <!-- Introduction Section -->
+        <section id="seta">
+            <div class="intro-container">
+                <div class="introduction">
+                    <p id="name">AMANDA VIEIRA</p>
+                    <p id="desenv"><b>DESENVOLVEDORA FRONT-END</b></p>
+                    <p id="description">Formada em Desenvolvimento de Software Multiplataforma pela FATEC em 2024.
+                        Tenho uma sólida base em desenvolvimento web e mobile, com experiência em diversas tecnologias,
+                        principalmente em React.
+                        Estou sempre em busca de me aprimorar.</p>
+                    <span>Visualizar projetos</span>
+                    <a href="#academico">Acadêmicos</a>
+                    <span> ou </span>
+                    <a href="#pessoais">Pessoais</a>
+                </div>
+                <img src="./static/perfil.png" alt="Foto de perfil da Amanda">
+            </div>
+
+            <a href="#academico" class="containerSeta">
+                <p id="titleProj">Projetos</p>
+                <i class="fa-solid fa-angle-down"></i>
+            </a>
+        </section>
+
+        <!-- First Carousel -->
+        <section id="academico">
+            <p class="title-center">Projetos acadêmicos</p>
+            <div class="carousel" id="carousel1">
+
+                <!-- Primeiro slide -->
+                <div class="carousel-slide active">
+                    <div class="academic-container">
+                        <div class="academic">
+                            <div class="mockup">
+                                <video controls>
+                                    <source src="./static/academic/api1.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                            <div class="proj">
+                                <p id="title">Sistema de Help Desk</p>
+                                <p>Desenvolvido para facilitar o acesso a suporte especializado, permitindo que os
+                                    usuários
+                                    abrissem chamados, enviassem dúvidas e avaliassem as respostas dos funcionários de
+                                    suporte.
+                                    O administrador podia gerenciar os funcionários, acompanhar as dúvidas, visualizar
+                                    gráficos
+                                    com percentuais de solicitações, além do número total de solicitações ao longo do
+                                    tempo.
+                                    Tabelas com as médias de avaliação dos funcionários e do sistema também eram
+                                    disponibilizadas, com a opção de filtrar dados por intervalos de tempo.</p>
+                                <p>Tecnologias utilizadas:</p>
+                                <ul>
+                                    <li>HTML, CSS, JavaScript, Python, MySQL e Flask</li>
+                                </ul>
+                                <div class="proj-btn">
+                                    <a href="https://github.com/amandavo/Sistema-Gestao-Servicos"
+                                        target="_blank"><button>Ver
+                                            Código</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Segundo slide -->
+                <div class="carousel-slide">
+                    <div class="academic-container">
+                        <div class="academic">
+                            <div class="mockup">
+                                <video controls>
+                                    <source src="./static/academic/api2.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                            <div class="proj">
+                                <p id="title">Crawler</p>
+                                <p>O sindicato dos professores enfrentava dificuldades para acompanhar as citações de
+                                    seus
+                                    associados no Diário Oficial do Estado de São Paulo. Como solução, foi desenvolvido
+                                    um
+                                    Crawler para a empresa MidAll, um programa que percorre a web de forma automatizada,
+                                    coletando e indexando conteúdo. O Crawler captura ocorrências de citações dos
+                                    professores
+                                    associados no Diário Oficial, processando e analisando as informações para gerar
+                                    relatórios
+                                    abrangentes. Esses relatórios ajudam o sindicato a identificar rapidamente problemas
+                                    ou
+                                    ocorrências relevantes.</p>
+                                <p>Tecnologias utilizadas:</p>
+                                <ul>
+                                    <li>ReactJs, JavaScript, TypeScript, Node, Python e MySQL</li>
+                                </ul>
+                                <div class="proj-btn">
+                                    <a href="https://github.com/amandavo/Crawler-AllTech" target="_blank"><button>Ver
+                                            Código</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Terceiro slide -->
+                <div class="carousel-slide">
+                    <div class="academic-container">
+                        <div class="academic">
+                            <div class="mockup">
+                                <video controls>
+                                    <source src="./static/academic/api3.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                            <div class="proj">
+                                <p id="title">Sistema de Gestão de Cobranças</p>
+                                <p>Foi desenvolvido para a empresa Pro4Tech um sistema de gestão de cobranças que
+                                    permite o
+                                    cadastro de usuários, clientes e títulos, facilitando o controle das informações e
+                                    registros
+                                    de parcelas a receber e pagamentos efetuados. O sistema inclui funcionalidades para
+                                    geração
+                                    de relatórios de cobrança personalizados, com opções de busca por data e situação
+                                    das
+                                    parcelas, otimizando a gestão e visualização das cobranças.</p>
+                                <p>Tecnologias utilizadas:</p>
+                                <ul>
+                                    <li>React, Java, Spring, JavaScript, TypeScript e MySQL</li>
+                                </ul>
+                                <div class="proj-btn">
+                                    <a href="https://github.com/Neo-Brasil/Neo-Brasil-Documentacao"
+                                        target="_blank"><button>Ver
+                                            Código</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quarto slide -->
+                <div class="carousel-slide">
+                    <div class="academic-container">
+                        <div class="academic">
+                            <div class="mockup">
+                                <video controls>
+                                    <source src="./static/academic/api4.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                            <div class="proj">
+                                <p id="title">Estação meteorológica</p>
+                                <p>Foi desenvolvido um projeto de estações meteorológicas de baixo custo com a empresa
+                                    Tecsus,
+                                    com sensores para monitorar a direção e velocidade do vento, índice pluviométrico,
+                                    umidade,
+                                    temperatura e pressão. As informações coletadas são enviadas a um servidor e
+                                    exibidas em um
+                                    portal com relatórios e dashboards. O portal pode ser usado para demonstrar
+                                    conceitos
+                                    matemáticos e ressaltar a importância do monitoramento ambiental na prevenção de
+                                    desastres
+                                    naturais, por meio da geração de alertas.</p>
+                                <p>Tecnologias utilizadas:</p>
+                                <ul>
+                                    <li>React, Mongo, Redis e AWS</li>
+                                </ul>
+                                <div class="proj-btn">
+                                    <a href="https://bitbucket.org/neocode2023/documentacao/src/main/"
+                                        target="_blank"><button>Ver
+                                            Código</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quinto slide -->
+                <div class="carousel-slide">
+                    <div class="academic-container">
+                        <div class="academic">
+                            <div class="mockup">
+                                <video controls>
+                                    <source src="./static/academic/api5.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                            <div class="proj">
+                                <p id="title">Aplicativo de pragas em campos agrícolas</p>
+                                <p>O projeto propõe uma solução para a contagem precisa de pragas nos campos para a
+                                    empresa
+                                    Visiona, foi desenvolvido um aplicativo que permite localizar armadilhas, capturar
+                                    fotos e
+                                    processá-las para determinar a quantidade de pragas presentes. Essa solução oferece
+                                    aos
+                                    agricultores informações mais rápidas e precisas sobre a aplicação de defensivos
+                                    agrícolas,
+                                    além de possibilitar um monitoramento mais eficiente das armadilhas.</p>
+                                <p>Tecnologias utilizadas:</p>
+                                <ul>
+                                    <li>ReactJs, Node, JavaScript, Python e Firebase</li>
+                                </ul>
+                                <div class="proj-btn">
+                                    <a href="https://github.com/amandavo/App-Campos-Agricolas-Visiona"
+                                        target="_blank"><button>Ver
+                                            Código</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sexto slide -->
+                <div class="carousel-slide">
+                    <div class="academic-container">
+                        <div class="academic">
+                            <div class="mockup">
+                                <img src="./static/academic/api6.png">
+                            </div>
+                            <div class="proj">
+                                <p id="title">Monitoramento de acesso em áreas restritas</p>
+                                <p>Em parceria com a Altave, foi desenvolvido um sistema onde apenas pessoas autorizadas
+                                    entram
+                                    no setor de óleo e gás. A solução proposta utiliza sensores nas portas de acesso,
+                                    que geram
+                                    avisos automáticos quando abertas, permitindo à equipe de segurança verificar se o
+                                    acesso
+                                    foi autorizado. O sistema também realiza análises periódicas dos dados, exibindo
+                                    gráficos. A
+                                    emissão de avisos permite a visualização da câmera da área e inclusão de comentários
+                                    para
+                                    uma análise automática de recorrência e gravidade. Para suporte adicional, o sistema
+                                    conta
+                                    com um chatbot disponível em todas as telas, oferecendo informações e orientações
+                                    aos
+                                    usuários.</p>
+                                <p>Tecnologias utilizadas:</p>
+                                <ul>
+                                    <li>ReactJs, Node, JavaScript, MongoDB, AWS e Vercel</li>
+                                </ul>
+                                <div class="proj-btn">
+                                    <a href="https://github.com/RatanabaOrg/PLN_Documentacao"
+                                        target="_blank"><button>Ver
+                                            Código</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <span class="carousel-arrow left" onclick="prevSlide('carousel1', 'dots1')">&#10094;</span>
+                <span class="carousel-arrow right" onclick="nextSlide('carousel1', 'dots1')">&#10095;</span>
+
+            </div>
+
+            <div class="carousel-dots" id="dots1">
+                <span class="carousel-dot active" onclick="currentSlide('carousel1', 'dots1', 0)"></span>
+                <span class="carousel-dot" onclick="currentSlide('carousel1', 'dots1', 1)"></span>
+                <span class="carousel-dot" onclick="currentSlide('carousel1', 'dots1', 2)"></span>
+                <span class="carousel-dot" onclick="currentSlide('carousel1', 'dots1', 3)"></span>
+                <span class="carousel-dot" onclick="currentSlide('carousel1', 'dots1', 4)"></span>
+                <span class="carousel-dot" onclick="currentSlide('carousel1', 'dots1', 5)"></span>
+            </div>
+
+            <script src="./static/carousel.js"></script>
+        </section>
+
+        <!-- Second Carousel -->
+        <section id="pessoais">
+            <p class="title-center">Projetos pessoais</p>
+            <div class="carousel" id="carousel2">
+
+                <!-- Primeiro slide -->
+                <div class="carousel-slide active">
+                    <div class="project-container">
+                        <div class="project">
+                            <div class="mockup">
+                                <img src="./static/proj/device.png">
+                            </div>
+                            <div class="proj">
+                                <p id="title">Dispositivo para Surdocegos</p>
+                                <p>Dispositivo computacional microcontrolado que permite a
+                                    comunicação independente a Surdocegos, desenvolvido em 2019.</p>
+                                <p>Ferramentas utilizadas:</p>
+                                <ul>
+                                    <li>Arduino</li>
+                                    <li>Tinkercad</li>
+                                    <li>MIT App Inventor</li>
+                                </ul>
+                                <div class="proj-btn">
+                                    <a href="./static/proj/video_device.html" target="_blank"><button>Ver
+                                            Vídeo</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Segundo slide -->
+                <div class="carousel-slide">
+                    <div class="project-container">
+                        <div class="project">
+                            <div class="mockup">
+                                <img src="./static/proj/game.png">
+                            </div>
+                            <div class="proj">
+                                <p id="title">Jogo de plataforma</p>
+                                <p>Desenvolvido em projeto conjunto de alunas e professoras do Instituto Tecnológico de
+                                    Aeronáutica (ITA)
+                                    para ensinar a linguagem Python através de jogo.</p>
+                                <p>Ferramentas utilizadas:</p>
+                                <ul>
+                                    <li>Python</li>
+                                    <li>Pygame</li>
+                                </ul>
+                                <div class="proj-btn">
+                                    <a href="./static/proj/video_game.html" target="_blank"><button>Ver
+                                            Vídeo</button></a>
+                                    <a href="https://github.com/amandavo/Jogo-Python" target="_blank"><button>Ver
+                                            Código</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Terceiro slide -->
+                <div class="carousel-slide">
+                    <div class="project-container">
+                        <div class="project">
+                            <div class="mockup">
+                                <img src="./static/proj/professor.png">
+                            </div>
+                            <div class="proj">
+                                <p id="title">Sistema de Ocorrências</p>
+                                <p><strong>Módulo do Professor</strong> - Aplicação web para registrar ocorrências de
+                                    alunos.</p>
+                                <p>Ferramentas utilizadas:</p>
+                                <ul>
+                                    <li>ReactJs</li>
+                                    <li>Firebase</li>
+                                </ul>
+                                <div class="proj-btn">
+                                    <a href="https://tccmoduloprofessor.netlify.app/" target="_blank"><button>Abrir
+                                            site</button></a>
+                                    <a href="https://github.com/amandavo/Sistema-Ocorrencias-Professor"
+                                        target="_blank"><button>Ver código</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quarto slide -->
+                <div class="carousel-slide">
+                    <div class="project-container">
+                        <div class="project">
+                            <div class="mockup">
+                                <img src="./static/proj/orientador.png">
+                            </div>
+                            <div class="proj">
+                                <p id="title">Sistema de Ocorrências</p>
+                                <p><strong>Módulo do Orientador</strong> - Aplicação web para administrar dados das
+                                    ocorrências.</p>
+                                <p>Ferramentas utilizadas:</p>
+                                <ul>
+                                    <li>ReactJs</li>
+                                    <li>Firebase</li>
+                                </ul>
+                                <div class="proj-btn">
+                                    <a href="https://tccmoduloorientador.netlify.app/" target="_blank"><button>Abrir
+                                            site</button></a>
+                                    <a href="https://github.com/amandavo/Sistema-Ocorrencias-Orientador"
+                                        target="_blank"><button>Ver código</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quinto slide -->
+                <div class="carousel-slide">
+                    <div class="project-container">
+                        <div class="project">
+                            <div class="mockup">
+                                <img src="./static/proj/salao.png">
+                            </div>
+                            <div class="proj">
+                                <p id="title">Aplicação web de salão de beleza</p>
+                                <p>Desenvolvimento de um site com o CRUD (Create, Read, Update, Delete) de clientes,
+                                    produtos e serviços. Possuindo várias listagens para observar os consumos e
+                                    possuindo também, relacionamento dos produtos e serviços para os cliente.</p>
+                                <p>Ferramentas utilizadas:</p>
+                                <ul>
+                                    <li>React</li>
+                                    <li>Node</li>
+                                    <li>JavaScript</li>
+                                    <li>Firebase</li>
+                                </ul>
+                                <div class="proj-btn">
+                                    <a href="https://grupowb.netlify.app/" target="_blank"><button>Abrir
+                                            site</button></a>
+                                    <a href="https://github.com/amandavo/Salao-de-beleza" target="_blank"><button>Ver
+                                            código</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <span class="carousel-arrow left" onclick="prevSlide('carousel2', 'dots2')">&#10094;</span>
+                <span class="carousel-arrow right" onclick="nextSlide('carousel2', 'dots2')">&#10095;</span>
+
+            </div>
+
+            <div class="carousel-dots" id="dots2">
+                <span class="carousel-dot active" onclick="currentSlide('carousel2', 'dots2', 0)"></span>
+                <span class="carousel-dot" onclick="currentSlide('carousel2', 'dots2', 1)"></span>
+                <span class="carousel-dot" onclick="currentSlide('carousel2', 'dots2', 2)"></span>
+                <span class="carousel-dot" onclick="currentSlide('carousel2', 'dots2', 3)"></span>
+                <span class="carousel-dot" onclick="currentSlide('carousel2', 'dots2', 4)"></span>
+            </div>
+
+            <script src="./static/carousel.js"></script>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contato" class="contact-container">
+            <div class="contact">
+                <p>Quer saber mais sobre mim?</p>
+                <a href="contato.html"><b>Venha me conhecer </b><i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+
+            <div class="redes">
+                <a href="https://github.com/amandavo/" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/amanda-vo/" target="_blank"><i
+                        class="fa-brands fa-linkedin"></i></a>
+                <a href="mailto:amandavoliveira0@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+                <a href="https://www.instagram.com/amanda.caires2/" target="_blank"><i
+                        class="fa-brands fa-instagram"></i></a>
+            </div>
+        </section>
+    </div>
 </body>
+
 </html>

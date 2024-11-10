@@ -1,1 +1,1 @@
-# Amanda
+# Amanda Vieira de Oliveira

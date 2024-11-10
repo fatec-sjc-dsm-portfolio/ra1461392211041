@@ -1,0 +1,111 @@
+.title-center {
+  font-size: 30px;
+  margin-bottom: 3%;
+  text-align: center;
+}
+
+.project-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project, .academic {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 4em;
+  width: 100%;
+}
+
+.mockup {
+  min-width: 300px;
+}
+
+.project .mockup img {
+  width: 100%; 
+  height: auto;
+}
+
+.academic .mockup video, .academic .mockup img {
+  width: 500px; 
+  height: auto;
+}
+
+.proj {
+  font-size: 20px;
+  gap: 1em;
+  width: 50%;
+  text-align: justify;
+}
+
+#title {
+  font-size: 24px;
+}
+
+.proj li {
+  font-size: 18px;
+}
+
+.proj-btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+}
+
+.proj div button, .proj button {
+  height: 6vh;
+  width: 9vw;
+  min-width: 100px;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+}
+
+.project .proj div button, .project .proj button {
+  background-color: #2a528e;
+}
+
+.academic .proj div button, .academic .proj button {
+  background-color: #00ac86;
+}
+
+.proj div button:hover, .proj button:hover {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.project .proj div button:hover, .project .proj button:hover {
+  background-color: #1f4068; 
+}
+
+.academic .proj div button:hover, .academic .proj button:hover {
+  background-color: #019273; 
+}
+
+@media (max-width: 1200px) {
+  .academic {
+    flex-direction: column;
+  }
+
+  .academic .proj {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .project {
+    flex-direction: column;
+  }
+
+  .proj {
+    width: 100%;
+  }
+
+  .proj-btn {
+    justify-content: center;
+  }
+}
