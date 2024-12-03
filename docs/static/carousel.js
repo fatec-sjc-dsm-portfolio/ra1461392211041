@@ -1,3 +1,8 @@
+const carouselIndexes = {
+    carousel1: 0,
+    carousel2: 0
+};
+
 function showSlide(carouselId, dotsId, index) {
     const slides = document.querySelectorAll(`#${carouselId} .carousel-slide`);
     const dots = document.querySelectorAll(`#${dotsId} .carousel-dot`);
@@ -7,18 +12,18 @@ function showSlide(carouselId, dotsId, index) {
         dots[i].classList.toggle("active", i === index);
     });
 
-    window[`${carouselId}Index`] = index;
+    carouselIndexes[carouselId] = index;
 }
 
 function nextSlide(carouselId, dotsId) {
     const slides = document.querySelectorAll(`#${carouselId} .carousel-slide`);
-    const currentIndex = window[`${carouselId}Index`] || 0;
+    const currentIndex = carouselIndexes[carouselId] || 0;
     showSlide(carouselId, dotsId, (currentIndex + 1) % slides.length);
 }
 
 function prevSlide(carouselId, dotsId) {
     const slides = document.querySelectorAll(`#${carouselId} .carousel-slide`);
-    const currentIndex = window[`${carouselId}Index`] || 0;
+    const currentIndex = carouselIndexes[carouselId] || 0;
     showSlide(carouselId, dotsId, (currentIndex - 1 + slides.length) % slides.length);
 }
 

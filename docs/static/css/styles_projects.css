@@ -14,6 +14,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
   gap: 4em;
   width: 100%;
 }
@@ -107,5 +108,11 @@
 
   .proj-btn {
     justify-content: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .academic .mockup video, .academic .mockup img {
+    width: 300px; 
   }
 }
