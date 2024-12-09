@@ -58,7 +58,7 @@
 .proj div button, .proj button {
   height: 6vh;
   width: 9vw;
-  min-width: 100px;
+  min-width: 160px;
   border: none;
   border-radius: 5px;
   color: #fff;
@@ -114,5 +114,13 @@
 @media (max-width: 500px) {
   .academic .mockup video, .academic .mockup img {
     width: 300px; 
+  }
+
+  .title-center {
+    margin-bottom: 10%;
+  }
+
+  .project, .academic {
+    gap: 0em;
   }
 }
